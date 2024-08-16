@@ -21,7 +21,7 @@ else{
 }
 // echo "$genderConstand";
 
-$alcoholConsump = ($consumption *5.14)/($weight * $genderConstand)-(0.015 * $timeElapsed);
+$alcoholConsump = ($consumption * $drinkNo *5.14)/($weight * $genderConstand)-0.015 * $timeElapsed;
 
 header("Location:/?data=$alcoholConsump");
 ?>
