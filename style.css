@@ -58,6 +58,11 @@ button:hover {
 }
 
 .output-wrapper > :last-child {
-  background-color: bisque;
   padding: 8px;
+}
+.safe{
+  background-color: #06c506;
+}
+.notsafe{
+  background-color: red;
 }

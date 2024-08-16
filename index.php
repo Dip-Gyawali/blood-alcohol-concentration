@@ -43,8 +43,16 @@
     </form>
 
     <div class="output-wrapper">
-      <div> Your Blood Concentration is: <span>0.08%</span></div>
-      <div> Safe to drive </div>
+      <div> Your Blood Concentration is: <span><?= round($_GET['data'],2)?></span></div>
+      <!-- condition rendering based on output -->
+      <?php
+        if($_GET['data']<=0.08){
+          echo "<div style='background-color:#06c506;'>Safe To Drive</div>";
+        }
+        else{
+          echo "<div style='background-color:red;'>Notsafe To Drive</div>";
+        }
+      ?>
     </div>
   </div>
 </body>
